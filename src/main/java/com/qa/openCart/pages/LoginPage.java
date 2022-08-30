@@ -60,6 +60,7 @@ public class LoginPage {
 	
 	@Step("perform search for the product: {0}")
 	public SearchResultsPage performSearch(String name) {
+		System.out.println("product name is:"+ name);
 		AccountsPage accPage = new AccountsPage(driver);
 		return accPage.doSearch(name);
 	}
